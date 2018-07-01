@@ -72,8 +72,8 @@ public AudioClip[] soundClips;
         source.clip = soundClips[num];
         source.volume = vol;
         source.spatialBlend = 1;
+        source.loop = true;
         source.Play();
 
-        Destroy(obj, soundClips[num].length);
     }
 }
