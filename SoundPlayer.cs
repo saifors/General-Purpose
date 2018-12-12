@@ -66,10 +66,10 @@ public AudioClip[] soundClips;
     {
         GameObject obj = new GameObject();
         obj.transform.position = transform.position;
-        obj.name = "MUSIC_" + soundClips[num].name;
+        obj.name = "MUSIC_" + musicClips[num].name;
 
         AudioSource source = obj.AddComponent<AudioSource>();
-        source.clip = soundClips[num];
+        source.clip = musicClips[num];
         source.volume = vol;
         source.spatialBlend = 1;
         source.loop = true;
